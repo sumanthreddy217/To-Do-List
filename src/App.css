@@ -3,12 +3,12 @@
   background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 .todo-list-mainDiv {
   width: 380px;
-  height: 580px;
+  height: 80%;
   background: #DAD299;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #B0DAB9, #DAD299); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -66,7 +66,7 @@
 @media (max-width: 480px) {
   .todo-list-mainDiv {
     width: 85vw;
-    height: 550px;
+    height: 100%;
   }
 
   .todo-task-input-div {
