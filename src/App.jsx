@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import TaskItem from "./components/taskItem";
+import TaskItem from "./components/TaskItem.jsx";
 
 function App() {
   const [newTask, setNewTask] = useState("");
