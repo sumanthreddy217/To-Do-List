@@ -48,10 +48,6 @@
 }
 
 @media screen and (max-width: 576px) {
-  .main-body {
-    height: 82vh;
-  }
-
   .todo-list-mainDiv {
     width: 100%;
     padding: 10px;
