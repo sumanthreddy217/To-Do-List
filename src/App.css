@@ -49,7 +49,7 @@
 
 @media screen and (max-width: 576px) {
   .main-body {
-    height: 92vh;
+    height: 82vh;
   }
 
   .todo-list-mainDiv {
