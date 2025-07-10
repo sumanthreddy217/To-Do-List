@@ -60,35 +60,17 @@ function App() {
         <h3>My To-Do List</h3>
 
         <div>
-          <div className="todo-task-input-div d-flex align-items-center justify-content-center">
-            <div className="form-floating w-75">
-              <input
-                type="text"
-                className="form-control small-input"
-                id="floatingInput"
-                placeholder="To-Do Task"
-                onChange={(e) => {
-                  handleInput(e);
-                }}
-                value={newTask}
-              />
-              <label htmlFor="floatingInput">To-Do Task</label>
+          <div className="todo-task-input-div d-flex align-items-center justify-content-center mb-2 ">
+            <div className="input-group input-group-lg w-75">
+              <input type="text" className="form-control small-input fs-6" id="floatingInput" placeholder="To-Do Task" onChange={(e) => {handleInput(e);}} value={newTask} />
             </div>
-            <button
-              className="btn btn-primary"
-              id="add-button"
-              onClick={() => {
-                addTask();
-              }}
-            >
-              {" "}
-              +{" "}
+            <button className="btn btn-primary" id="add-button" onClick={() => {addTask();}}>
+              {" "} + {" "}
             </button>
           </div>
-          <h6>
-            {" "}
-            <u>Need To Completed</u>{" "}
-          </h6>
+
+
+          <h6 className="cgreen"> {" "} Need To Completed: {" "} </h6>
           <ul className="tasks-list">
             {myTasks.map((task, index) => (
               <TaskItem
@@ -100,11 +82,10 @@ function App() {
               />
             ))}
           </ul>
+
           <hr />
-          <h6>
-            {" "}
-            <u>Completed tasks</u>{" "}
-          </h6>
+          
+          <h6 className="cred"> {" "} Completed tasks: {" "} </h6>
           <ul className="tasks-list">
             {completedTasks.map((task, index) => (
               <TaskItem
@@ -116,6 +97,37 @@ function App() {
               />
             ))}
           </ul>
+
+          <div className="mobile_response">
+            <h6 className="cgreen-2"> {" "} Need To Completed: {" "} </h6>
+          <ul className="tasks-list-2">
+            {myTasks.map((task, index) => (
+              <TaskItem
+                taskName={task}
+                key={index}
+                deleteTask={deleteTask}
+                completeTask={completeTask}
+                isCompleted={false}
+              />
+            ))}
+          </ul>
+
+          <hr />
+          
+          <h6 className="cred-2"> {" "} Completed tasks: {" "} </h6>
+          <ul className="tasks-list-2">
+            {completedTasks.map((task, index) => (
+              <TaskItem
+                taskName={task}
+                key={index}
+                deleteTask={deleteTask}
+                completeTask={completeTask}
+                isCompleted={true}
+              />
+            ))}
+          </ul>
+          </div>
+
         </div>
       </div>
     </div>

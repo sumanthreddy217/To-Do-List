@@ -1,5 +1,6 @@
 .main-body {
-  background: linear-gradient(to right, #3f4c6b, #606c88);
+  /* background: linear-gradient(to right, #3f4c6b, #606c88); */
+  background: black;
   min-height: 100vh;
   padding: 20px;
 }
@@ -7,16 +8,19 @@
 .todo-list-mainDiv {
   width: 100%;
   max-width: 400px;
-  background: linear-gradient(to right, #B0DAB9, #DAD299);
+  /* background: linear-gradient(to right, #B0DAB9, #DAD299); */
+  background: black;
   border-radius: 12px;
   padding: 15px;
-  border: 1px solid black;
-  box-shadow: 2px 4px 10px #00000080;
+  border: 1px solid #ffffffc6;
+  box-shadow: 2px 4px 10px #ffffff80;
   margin: 0 auto;
 }
 
 .todo-list-mainDiv h3 {
   text-align: center;
+  color: antiquewhite;
+  text-shadow: 2px 2px 5px #1bd562;
 }
 
 .todo-task-input-div {
@@ -29,10 +33,11 @@
   height: 45px;
   border-radius: 50%;
   padding: 0;
-  font-size: 20px;
+  font-size: 25px;
 }
 
-.tasks-list {
+
+.tasks-list, .tasks-list-2 {
   width: 100%;
   list-style: none;
   padding: 0;
@@ -40,6 +45,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  color: white;
 }
 
 .task-buttons {
@@ -47,7 +53,26 @@
   gap: 10px;
 }
 
-@media screen and (max-width: 576px) {
+.cgreen, .cgreen-2 {
+  color: #21d51b;
+}
+
+.cred, .cred-2 {
+  color: #d51b1b;
+}
+
+/* its a class name in taskitem.jsx in span */
+.completed-task {
+  color: #ffffff;              
+  text-decoration: line-through;
+  text-decoration-color: #ffffff; 
+}
+
+.mobile_response {
+  display: none;
+}
+
+/* @media screen and (max-width: 576px) {
   .todo-list-mainDiv {
     width: 100%;
     padding: 10px;
@@ -62,4 +87,31 @@
   .form-floating input {
     font-size: 14px;
   }
+} */
+
+@media screen and (max-width:400px) {
+  .todo-list-mainDiv{
+    height: 90vh;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+  }
+
+  h3{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .tasks-list, .cred, .cgreen{
+    display: none;
+  }
+
+  .mobile_response {
+    display: block;
+    padding: 20px;
+    border-radius: 7px;
+    border: 1px solid #ffffff8a;
+    box-shadow: 2px 2px 5px #ffffff92;
+  }
+
 }

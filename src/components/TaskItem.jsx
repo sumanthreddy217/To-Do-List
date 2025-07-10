@@ -3,7 +3,7 @@ import React from "react";
 function TaskItem({ taskName, deleteTask, completeTask, isCompleted }) {
   return (
     <li className="task d-flex justify-content-between">
-      <span className={isCompleted ? "text-decoration-line-through text-success" : ""}>
+      <span className={isCompleted ? "completed-task" : ""}> 
         {taskName}
       </span>
       <div className="task-buttons">
