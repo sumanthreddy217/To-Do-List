@@ -1,7 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
 .main-body {
   /* background: linear-gradient(to right, #3f4c6b, #606c88); */
   background: black;
-  min-height: 100vh;
+  height: 100vh;
   padding: 20px;
 }
 
@@ -71,23 +78,6 @@
 .mobile_response {
   display: none;
 }
-
-/* @media screen and (max-width: 576px) {
-  .todo-list-mainDiv {
-    width: 100%;
-    padding: 10px;
-  }
-
-  #add-button {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-  }
-
-  .form-floating input {
-    font-size: 14px;
-  }
-} */
 
 @media screen and (max-width:400px) {
   .todo-list-mainDiv{
