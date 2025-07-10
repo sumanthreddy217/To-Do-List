@@ -87,6 +87,11 @@
     box-shadow: none;
   }
 
+  .input-group, #add-button {
+    margin-top: 0.5rem;
+    margin-bottom: -6%;
+  }
+
   h3{
     font-size: 2.2rem;
     margin-bottom: 1rem;
