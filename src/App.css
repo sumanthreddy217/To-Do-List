@@ -97,6 +97,7 @@
     margin-bottom: 1rem;
     margin-top: 1.7rem;
     font-weight: 700;
+    text-decoration: underline;
   }
 
   .tasks-list, .cred, .cgreen{
